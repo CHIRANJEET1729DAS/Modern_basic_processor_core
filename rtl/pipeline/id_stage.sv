@@ -1,4 +1,4 @@
-module decode(input wire clk,input wire [31:0] instruction,input wire [31:0] instruction_register,output reg [31:0] operand_1,output reg [31:0] operand_2,output reg [4:0] destination_reg,output reg [3:0] alu_control,output reg reg_write,output reg [15:0] immediate_value); 
+module decode(input wire clk,input wire [31:0] instruction,input wire [31:0] instruction_register,output reg [4:0] operand_1,output reg [4:0] operand_2,output reg [4:0] destination_reg,output reg [3:0] alu_control,output reg reg_write,output reg [15:0] immediate_value); 
 
 // Decoding the instruction
 wire [5:0] opcode = instruction[31:26];
@@ -48,8 +48,8 @@ reg[31:0] instruction;
 
 //output parameters
 
-wire[31:0] operand_1;
-wire[31:0] operand_2;
+wire[4:0] operand_1;
+wire[4:0] operand_2;
 wire[4:0] destination_reg;
 wire[3:0] alu_control;
 wire reg_write;
