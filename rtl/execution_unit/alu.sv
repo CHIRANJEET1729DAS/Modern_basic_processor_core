@@ -35,6 +35,7 @@ always @(posedge clk)begin
 		 4'b1011:begin
 		   result <= (operand_1 == operand_2) ? 1:0;
                  end
+		 default: result = 32'b0;
          endcase
  end 
 endmodule
