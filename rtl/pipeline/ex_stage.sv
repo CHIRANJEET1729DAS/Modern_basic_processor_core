@@ -10,7 +10,7 @@ always @(posedge clk)begin
 			
 		 end
                  4'b0010:begin
-	           general_purpose_register[gpr_destination_address] <= operand_1 + immediate_value;
+			 general_purpose_register[gpr_destination_address] <= operand_1 - immediate_value;
 		   result <= general_purpose_register[gpr_destination_address];
 		 end
 		 4'b0011:begin
