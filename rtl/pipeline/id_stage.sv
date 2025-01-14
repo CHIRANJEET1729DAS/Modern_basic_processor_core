@@ -1,4 +1,4 @@
-module decode(input wire clk,input wire [31:0] instruction,input wire [31:0] general_purpose_register,output reg [4:0] operand_1,output reg [4:0] operand_2,output reg [4:0] gpr_destination_address,output reg [3:0] alu_control,output reg reg_write,output reg [15:0] immediate_value); 
+module decode(input wire clk,input wire [31:0] instruction,input wire [31:0] general_purpose_register,output reg [4:0] operand_1,output reg [4:0] operand_2,output reg [4:0] gpr_destination_address,output wire [3:0] alu_control,output wire reg_write,output reg [15:0] immediate_value); 
 
 // Decoding the instruction
 wire [5:0] opcode = instruction[31:26];
