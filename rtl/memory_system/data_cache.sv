@@ -1,4 +1,4 @@
-module data_cache(input wire clk,input wire reset,input wire[1023:0] data_cache,input wire[31:0] data,output wire index_for_quick_access);
+module data_cache_unit(input wire clk,input wire reset,input wire[1023:0] data_cache,input wire[31:0] data,output wire index_for_quick_access);
 
 reg hit ;
 integer index_for_cache = 0;
