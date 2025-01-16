@@ -1,4 +1,4 @@
-module instruction_cache(input wire clk,input wire reset,input wire[1023:0] instruction_cache,input wire[31:0] instruction,output wire index_for_quick_access);
+module instruction_cache_unit(input wire clk,input wire reset,input wire[1023:0] instruction_cache,input wire[31:0] instruction,output wire index_for_quick_access);
  
 reg hit ;
 integer index_for_cache = 0;
